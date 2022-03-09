@@ -1,8 +1,8 @@
 # AirDet: Few-Shot Detection without Fine-tuning for Autonomous Exploration
 
-### Anonymous CVPR submission
+### Anonymous ECCV submission
 
-### Paper ID 5521
+### Paper ID 4293
 
 ###  
 

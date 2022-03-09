@@ -1,0 +1,29 @@
+_BASE_: "Base-FSOD-C4.yaml"
+MODEL:
+  WEIGHTS: "./output/R50/model_final.pth" 
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50
+    OUT_FEATURES: ["res2", "res3", "res4"]
+  BACKBONE:
+    FREEZE_AT: 5
+DATASETS:
+  TRAIN: ("voc_2012_train_1",)
+  TEST: ("voc_2012_validation",)
+  TESTSHOTS: 1
+SOLVER:
+  IMS_PER_BATCH: 4
+  BASE_LR: 0.001
+  STEPS: (2000, 3000)
+  MAX_ITER: 3001
+  WARMUP_ITERS: 200
+INPUT:
+  FS:
+    FEW_SHOT: True
+    SUPPORT_WAY: 2
+    SUPPORT_SHOT: 1
+  MIN_SIZE_TRAIN: (440, 472, 504, 536, 568, 600)
+  MAX_SIZE_TRAIN: 1000
+  MIN_SIZE_TEST: 600
+  MAX_SIZE_TEST: 1000
+OUTPUT_DIR: './output/voc/1shot_50'

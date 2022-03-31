@@ -131,6 +131,8 @@ def build_optimizer(cfg: CfgNode, model: torch.nn.Module) -> torch.optim.Optimiz
 
             if 'box_predictor' in key:
                 lr = cfg.SOLVER.BASE_LR * cfg.SOLVER.HEAD_LR_FACTOR
+            if 'backbone.res2' in key or 'backbone.res3' in key:
+                lr = cfg.SOLVER.BASE_LR * cfg.SOLVER.BACKBONE_LR_FACTOR
             params += [{"params": [value], "lr": lr, "weight_decay": weight_decay}]
     optimizer = torch.optim.SGD(
         params, cfg.SOLVER.BASE_LR, momentum=cfg.SOLVER.MOMENTUM, nesterov=cfg.SOLVER.NESTEROV

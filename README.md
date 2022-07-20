@@ -1,8 +1,8 @@
 # AirDet: Few-Shot Detection without Fine-tuning for Autonomous Exploration
 
-### Anonymous ECCV submission
+### Bowen Li, Chen Wang, Pranay Reddy, Seungchan Kim, and Sebastian Scherer
 
-### Paper ID 4293
+### European Conference on Computer Vision
 
 ###  
 

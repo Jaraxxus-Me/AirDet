@@ -77,7 +77,7 @@ VOC20{12}/
 
 ### 2. Generate supports 
 
-Download and unzip support [COCO json](https://mega.nz/file/QEETwCLJ#A8m0R7NhJ-MUNuT1fhzEgRIg6t5R69u5rAaBHTsqgUw) files in
+Download and unzip support (COCO json files) [mega](https://mega.nz/file/QEETwCLJ#A8m0R7NhJ-MUNuT1fhzEgRIg6t5R69u5rAaBHTsqgUw)/[BaiduNet](https://pan.baidu.com/s/1cFtwrWAwTotwZKbXYyzjEA)(pwd:1134) in
 
 ```shell
 datasets/
@@ -85,7 +85,7 @@ datasets/
     new_annotations/
 ```
 
-Download and unzip support [VOC json](https://mega.nz/file/BBcjjYwY#1S3Utg99D_WyfzN5qq0UfeuFrlh7Eum2jZs9U7GHhJY) files in
+Download and unzip support (VOC json files) [mega](https://mega.nz/file/BBcjjYwY#1S3Utg99D_WyfzN5qq0UfeuFrlh7Eum2jZs9U7GHhJY)/[BaiduNet](https://pan.baidu.com/s/1vPZmKKue4CAZQVzOnBUs-A)(pwd:1134) in
 
 ```shell
 datasets/
